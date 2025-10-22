@@ -1,0 +1,9 @@
+def nPr(n, r):
+    return factorial(n) / factorial(n - r)  # ❌ Floating-point output
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(nPr(5, 2))  # Expected 20
